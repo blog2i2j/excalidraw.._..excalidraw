@@ -26,7 +26,7 @@ export default defineConfig({
         assetFileNames(chunkInfo) {
           if (chunkInfo?.name?.endsWith(".woff2")) {
             const family = chunkInfo.name.split("-")[0];
-            return `${family}/[name][extname]`;
+            return `fonts/${family}/[name][extname]`;
           }
 
           return "assets/[name]-[hash][extname]";

@@ -7,8 +7,8 @@
  * In the future consider separating common utils into a separate shared chunk.
  */
 
-import loadWoff2 from "../wasm/woff2-loader";
-import loadHbSubset from "../wasm/hb-subset-loader";
+import loadWoff2 from "./woff2/woff2-loader";
+import loadHbSubset from "./harfbuzz/harfbuzz-loader";
 
 /**
  * Shared commands between the main thread and worker threads.

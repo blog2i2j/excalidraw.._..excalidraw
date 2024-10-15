@@ -1,19 +1,10 @@
 import { promiseTry } from "../utils";
-import { LOCAL_FONT_PROTOCOL } from "./metadata";
-import { subsetWoff2GlyphsByCodepoints } from "./subset/subset-main";
+import { LOCAL_FONT_PROTOCOL } from "./FontMetadata";
+import { subsetWoff2GlyphsByCodepoints } from "../subset/subset-main";
 
 type DataURL = string;
 
-export interface IExcalidrawFontFace {
-  urls: URL[] | DataURL[];
-  fontFace: FontFace;
-  toCSS(
-    characters: string,
-    codePoints: Array<number>,
-  ): Promise<string> | undefined;
-}
-
-export class ExcalidrawFontFace implements IExcalidrawFontFace {
+export class ExcalidrawFontFace {
   public readonly urls: URL[] | DataURL[];
   public readonly fontFace: FontFace;
 

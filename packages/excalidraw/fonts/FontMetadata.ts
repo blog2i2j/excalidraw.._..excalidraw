@@ -1,8 +1,8 @@
 import {
-  FontFamilyCodeIcon,
-  FontFamilyHeadingIcon,
-  FontFamilyNormalIcon,
   FreedrawIcon,
+  FontFamilyNormalIcon,
+  FontFamilyHeadingIcon,
+  FontFamilyCodeIcon,
 } from "../components/icons";
 import { FONT_FAMILY, FONT_FAMILY_FALLBACKS } from "../constants";
 
